@@ -80,6 +80,8 @@ class AppLayout extends React.Component {
     // @todo main - menu-collapsed
     return (
       <div>
+        <script type="application/javascript" src={require("./components/matrix.js")}></script>
+        <link rel="stylesheet" type="text/css" href={require("./styles/style.css")} />
         <main className=''>
           <Sidebar {...this.props} />
           <PageTop location={this.props.location} user={this.state.user} />
